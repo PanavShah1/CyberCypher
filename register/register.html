@@ -15,11 +15,11 @@
                 <p>Join HealthVault</p>
                 <div>
                     <p>Are you a doctor?</p>
-                    <span id="doctor-register">Register Here</span>
+                    <a href="../signup/signup.html" target="_"><span id="doctor-register">Register Here</span></a>
                 </div>
             </div>
             <div class="info">
-                <form>
+                <form id="registerForm">
                     <div>
                         <label for="full-name">Full Name</label><br>
                         <input type="text" id="full-name" name="full-name" placeholder="Full Name"><br>               
@@ -32,11 +32,14 @@
                         <label for="create-password">Create Password</label><br>
                         <input type="text" id="create-password" name="create-password" placeholder="Passwprd"><br>
                     </div>
+                    <!-- <input type="submit" value="Next" class="next"> -->
+                    <button type="submit" value="Next" class="next">Next</button>
                 </form>
-                <button class="next">Next</button>
+                
             </div>
         </div>
 
     </div>
+    <script src="register_script.js"></script>
 </body>
 </html>
