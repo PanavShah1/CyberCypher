@@ -4,19 +4,17 @@
     padding: 0;
 }
 
-#doctor-register{
+#back{
     border: none;
     background-color: white;
     color: orange;
     font-size: 0.8rem;
 }
-
-#doctor-register:hover{
+#back:hover{
     text-decoration: underline;
     opacity: 80%;
     cursor: pointer;
 }
-
 body{
     background-color: white;
     height: 100vh;
@@ -32,8 +30,8 @@ body{
 }
 
 .container > img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin-right: 4%;
     align-self: center;
 }
@@ -88,6 +86,12 @@ input{
     width: 300px;
     height: 30px;
     border-radius: 4px;
+}
+
+.next:hover{
+    transform: scale(1.03);
+    opacity: 90%;
+    cursor: pointer;
 }
 
 
