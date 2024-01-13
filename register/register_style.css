@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+#doctor-register{
+    border: none;
+    background-color: white;
+    color: orange;
+}
+
 body{
     background-color: white;
     height: 100vh;
@@ -14,8 +20,74 @@ body{
 
 .container{
     display: flex;
+    padding: 20px;
+    width: 800px;
 }
 
 .container > img{
     width: 300px;
+    height: 300px;
+    margin-right: 4%;
+}
+
+.register{
+    flex-grow: 1;
+    border: solid rgb(198, 198, 198) 1px;
+    padding: 20px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head > p{
+    font-size: 2rem;
+}
+
+.head > div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.head > div >p{
+    font-size: 1rem;
+}
+
+.head > div > button{
+    font-size: 0.75rem;
+}
+
+.info > form > div{
+    margin-top: 20px;
+}
+
+input{
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.next{
+    border: none;
+    background-color: #4fc2f7;
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 800px){
+    img{
+        display: none;
+    }
+    .container{
+        width: 500px;
+    }
 }
