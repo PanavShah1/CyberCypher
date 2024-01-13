@@ -1,13 +1,13 @@
 
 body{
+    font-family:Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans', 'Gill Sans MT';
+
     height: 1000px;
     width: 100%;
     position: absolute;
     padding: 0%;
     border: 0px;
     margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 
@@ -55,7 +55,6 @@ body{
     text-align: center;
     padding-top: 10px;
     font-size: 32;
-    font-family:Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans', 'Gill Sans MT';
 }
 #subHeader{
     position: absolute;
@@ -88,6 +87,7 @@ body{
     position: relative;
     top:5px;
     height: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .facilities:hover{
@@ -95,53 +95,54 @@ body{
     cursor:pointer;
 }
 
+div{
+    border: 1px solid black;
+}
 
-
-
-.content-area{
+.container{
     margin-top: 100px;
+    display: flex;
+    height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 600px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.appointments{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.right{
+    width: 40%;
+    max-width: 400px;
+}
 
-
-.content{
-    margin: 20px;
-    min-width: 400px;
-    max-width: 1000px;
-    height: 300px;
-    border: 1px solid black;
+.doctor{
     display: flex;
-    /* flex-direction: row-reverse; */
 }
 
-img{
-    width: 300px;
-    height: 300px;
-}
-
-.image{
-    width: 35%;
-    border: 1px solid black;
-    height: 300px;
+.doctor img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10%;
 }
 
 
-.image2 img{
-    width: 200px;
-    height: 200px;
-}
-
-.text{
-    padding: 10px;
-    width: 65%;
-    border: 1px solid black;
-    /* height: 100%; */
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    
-}
 
