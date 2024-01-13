@@ -1,0 +1,107 @@
+
+body{
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    padding: 0%;
+    border: 0px;
+    margin: 0px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(7,38,119);
+    color: white;
+    
+}
+#nameOurs{
+    position: absolute;
+    top: 72px;
+    left: 10px;
+}
+
+#loginButton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #4fc2f7;
+    right: 30px;
+    top: 30px;
+    border-radius: 20px;
+    font-size: small;
+    text-align: center;
+    padding-top: 10px
+
+    
+}
+#loginButton:hover{
+    transform: scale(1.1);
+    /* background-color: aqua; */
+    opacity: 0.9;
+
+}
+#slogan{
+    position: absolute;
+    /* background-color: #4fc2f7; */
+    width: 80%;
+    right: 10%;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 32;
+    font-family:Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans', 'Gill Sans MT';
+}
+#subHeader{
+    position: absolute;
+    /* background-color: #4fc2f7; */
+    width: 80%;
+    height: 40px;
+    right: 10%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo{
+    position: relative;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    /* background-color: aqua; */
+    margin: 10px;
+    /* font-size: large; */
+    
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.facilities{
+    position: relative;
+    top:5px;
+    height: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.facilities:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+#contentContainer{
+    position: absolute;
+    height: 10%;
+    bottom: 0%;
+}
+.content{
+    display: flex;
+    position: absolute;
+    height: 100%;
+}
+#content1{
+    top: 100px;
+}
