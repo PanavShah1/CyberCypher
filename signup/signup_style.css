@@ -8,14 +8,8 @@
     border: none;
     background-color: white;
     color: orange;
-    font-size: 0.8rem;
 }
 
-#doctor-register:hover{
-    text-decoration: underline;
-    opacity: 80%;
-    cursor: pointer;
-}
 
 body{
     background-color: white;
