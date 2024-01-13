@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="signup_style.css">
 </head>
@@ -18,7 +16,7 @@
                 </div> -->
             </div>
             <div class="info">
-                <form>
+                <form id ='signupForm'>
                     <div>
                         <label for="mob-no">Mobile Number</label><br>
                         <input type="text" id="mob-no" name="mob-no" placeholder="Mobile Number"><br>
@@ -27,11 +25,15 @@
                         <label for="password">Password</label><br>
                         <input type="text" id="password" name="password" placeholder="Passwprd"><br>
                     </div>
+                    <input class="next" type="submit" value="Login"></button>
                 </form>
-                <button class="next">Login</button>
+                <a href="../register/register.html"><div style="position: absolute; left: 500px;">register</div></a>
+                
             </div>
         </div>
+        
 
     </div>
+    <script src="signup_script.js"></script>
 </body>
 </html>
