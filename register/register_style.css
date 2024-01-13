@@ -91,6 +91,12 @@ input{
     border-radius: 4px;
 }
 
+.next:hover{
+    transform: scale(1.03);
+    opacity: 90%;
+    cursor: pointer;
+}
+
 
 @media (max-width: 800px){
     img{
@@ -100,3 +106,7 @@ input{
         width: 500px;
     }
 }
+
+
+
+
