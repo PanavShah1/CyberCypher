@@ -1,0 +1,157 @@
+
+body{
+    font-family:Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans', 'Gill Sans MT';
+
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    padding: 0%;
+    border: 0px;
+    margin: 0px;
+}
+
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(7,38,119);
+    color: white;
+    
+}
+#nameOurs{
+    position: absolute;
+    top: 72px;
+    left: 10px;
+}
+
+#loginButton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #4fc2f7;
+    right: 30px;
+    top: 30px;
+    border-radius: 20px;
+    font-size: small;
+    text-align: center;
+    padding-top: 10px
+
+    
+}
+#loginButton:hover{
+    transform: scale(1.1);
+    /* background-color: aqua; */
+    opacity: 0.9;
+
+}
+#slogan{
+    position: absolute;
+    /* background-color: #4fc2f7; */
+    width: 80%;
+    right: 10%;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 32;
+}
+#subHeader{
+    position: absolute;
+    /* background-color: #4fc2f7; */
+    width: 80%;
+    height: 40px;
+    right: 10%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo{
+    position: relative;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    /* background-color: aqua; */
+    margin: 10px;
+    /* font-size: large; */
+    
+    
+}
+#logo>a>img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.facilities{
+    position: relative;
+    top:5px;
+    height: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.facilities:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+div{
+    /* border: 1px solid black; */
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    justify-content: center;
+    /* min-width: 650px; */
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    margin-right: 20px;
+    /* border: 1px gray solid; */
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 1px gray solid;
+
+}
+
+.appointments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px gray solid;
+    min-height: 100vh;
+
+}
+
+
+.doctor{
+    display: flex;
+    padding: 5px;
+}
+
+.doctor img{
+    width: 100px;
+    height: 100px;
+}
+
+.imp{
+    font-size: 1.2rem;
+}
+
+
+
