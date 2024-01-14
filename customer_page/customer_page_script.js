@@ -101,7 +101,7 @@ function submit(event){
     // updateAppo(0, num);
     // event.preventDefault();
 }
-// console.log(patients_data[x]['appointments']);
+
 function updateAppo(pat, doc){
     console.log('hello');
     
