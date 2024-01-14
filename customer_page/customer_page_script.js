@@ -57,11 +57,7 @@ let patients_data = [
         'appointments': [{
             'doctor': doctors_data[0],
             'date-time': '23/2/23 12:00'
-        },
-        {
-            'doctor': doctors_data[1],
-            'date-time': '15/01/24 15:00'
-        }
+        } 
         ]
     },
     {
@@ -147,7 +143,7 @@ function appo(n){
     hiddenDiv.style.display = 'block';
 }
 
-function submit(event){
+function submit(){
 
     let inputElement = document.querySelector('#date-time');
     let inputValue = inputElement.value;
@@ -158,6 +154,20 @@ function submit(event){
     patients_data[x]['appointments'].push({'doctor':doctors_data[num], 'date-time': date_time});
     inputElement.value = '';
     console.log(patients_data[x]['appointments'])
+    alert('Appointment scheduled')
+
+    
+    patients_data[x]['appointments'].push({
+        'doctor': doctors_data[1],
+        'date-time': '15/1/24 15:00'
+    })
+    // console.log(doctors_data[j]['name']);
+    let newElemtnt = document.createElement('div');
+    newElemtnt.classList.add('doctor');
+    console.log(patients_data[x]['appointments'][1]['date-time']);
+    newElemtnt.innerHTML = '<img src='+patients_data[x]['appointments'][1]['doctor']['image']+'><div><p>Name : <span class="imp">'+patients_data[x]['appointments'][1]['doctor']['name']+'</span></p><p>Specialization : <span class="imp">'+doctors_data[1]['specialization']+'</span></p><br><p>Date/Time: <span class="imp">'+patients_data[x]['appointments'][2]['date-time']+'</span></p></div>'
+    document.querySelector('.appointments').appendChild(newElemtnt);
+    
     // updateAppo(0, num);
     // event.preventDefault();
 }

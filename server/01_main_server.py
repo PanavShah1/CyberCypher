@@ -19,7 +19,8 @@ app.add_middleware(
 )
 
 people = []
-people.append(['Samanth' ,'1234', 'xyz', 'doctor'])
+people.append(['Mary Cruise' ,'3928374637', 'xyz', 'patient'])
+people.append(['Danial Smith', '3495837293', 'abc', 'doctor'])
 
 @app.post("/login_user")
 async def main(values: dict):

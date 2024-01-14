@@ -1,15 +1,16 @@
+
+
 let patients_data = [
     {
         'index': 0,
-        'name': 'Tom Cruise',
+        'name': 'Mary Cruise',
         'image': 'face3.png',
         'phone-no': '3928374637',
         'password': 'best543',
         'appointments': [{
             // 'doctor': doctors_data[0],
-            // 'date-time': '23/2/23 12:00'
-        }
-
+            'date-time': '23/2/23 12:00'
+        } 
         ]
     },
     {
@@ -23,9 +24,6 @@ let patients_data = [
     }
 ]
 
-
-
-
 let doctors_data = [
     {
         'index': 0,
@@ -33,7 +31,7 @@ let doctors_data = [
         'image': 'face1.png',
         'phone-no': '2398475619',
         'password': 'redfish123',
-        'specialization': 'orthopedic',
+        'specialization': 'Orthopedic',
         'appointments': [
             {
                 'patient': patients_data[0],
@@ -47,10 +45,10 @@ let doctors_data = [
         'image': 'face2.png',
         'phone-no': '3495837293',
         'password': 'iamthebest34',
-        'specialization': 'pediatrician',
+        'specialization': 'Pediatrician',
         'appointments': [
             {
-                'patient': patients_data[1],
+                'patient': patients_data[0],
                 'date-time': '15/01/24 15:00'
             }
         ]
