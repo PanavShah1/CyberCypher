@@ -1,3 +1,26 @@
+
+const apiUrl = 'https://websitename';
+
+fetch(apiUrl)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        soln = data; //converts the file to a dictionary
+        console.log(soln);
+    })
+    .catch(error => {
+        console.error('Error:', error.message);
+    });
+
+
+
+
+
+
 let doctors_data = [
     {
         'index': 0,
@@ -5,7 +28,7 @@ let doctors_data = [
         'image': 'face1.png',
         'phone-no': '2398475619',
         'password': 'redfish123',
-        'specialization': 'orthopedic',
+        'specialization': 'Orthopedic',
         'appointments': [
             {
                 // 'patient': patients_data[0],
@@ -19,7 +42,7 @@ let doctors_data = [
         'image': 'face2.png',
         'phone-no': '3495837293',
         'password': 'iamthebest34',
-        'specialization': 'pediatrician',
+        'specialization': 'Pediatrician',
         'appointments': []
     }
 ]
@@ -27,15 +50,18 @@ let doctors_data = [
 let patients_data = [
     {
         'index': 0,
-        'name': 'Tom Cruise',
+        'name': 'Mary Cruise',
         'image': 'face3.png',
         'phone-no': '3928374637',
         'password': 'best543',
         'appointments': [{
             'doctor': doctors_data[0],
             'date-time': '23/2/23 12:00'
+        },
+        {
+            'doctor': doctors_data[1],
+            'date-time': '15/01/24 15:00'
         }
-
         ]
     },
     {

@@ -7,7 +7,7 @@ let patients_data = [
         'password': 'best543',
         'appointments': [{
             // 'doctor': doctors_data[0],
-            'date-time': '23/2/23 12:00'
+            // 'date-time': '23/2/23 12:00'
         }
 
         ]
@@ -48,14 +48,19 @@ let doctors_data = [
         'phone-no': '3495837293',
         'password': 'iamthebest34',
         'specialization': 'pediatrician',
-        'appointments': []
+        'appointments': [
+            {
+                'patient': patients_data[1],
+                'date-time': '15/01/24 15:00'
+            }
+        ]
     }
 ]
 
 
 
-let x = 0;
-
+let x = 1;
+console.log(doctors_data[x]);
 
 
 
@@ -92,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(doctors_data[j]['name']);
         let newElemtnt = document.createElement('div');
         newElemtnt.classList.add('doctor');
-        newElemtnt.innerHTML = '<img src='+doctors_data[x]['appointments'][j]['patient']['image']+'><div><p>Name : <span class="imp">'+doctors_data[x]['appointments'][j]['patient']['name']+'</span></p><br><p>Date/Time: <span class="imp">'+patients_data[x]['appointments'][j]['date-time']+'</span></p></div>'
+        newElemtnt.innerHTML = '<img src='+doctors_data[x]['appointments'][j]['patient']['image']+'><div><p>Name : <span class="imp">'+doctors_data[x]['appointments'][j]['patient']['name']+'</span></p><br><p>Date/Time: <span class="imp">'+doctors_data[x]['appointments'][j]['date-time']+'</span></p></div>'
         document.querySelector('.appointments').appendChild(newElemtnt);
     }
 
