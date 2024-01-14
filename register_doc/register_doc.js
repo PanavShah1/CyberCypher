@@ -1,5 +1,5 @@
-document.getElementById("registerForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevents the default form submission
+const DoShit = () => {
+   
     var name = document.getElementById("full-name").value;
     var phone = document.getElementById("mob-no").value;
     var password = document.getElementById("create-password").value;
@@ -9,7 +9,7 @@ document.getElementById("registerForm").addEventListener("submit", function(even
 
 
 
-    fetch('http://127.0.0.1:8000/create_user', {
+    fetch('http://127.0.0.1:8000/create_doc', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ document.getElementById("registerForm").addEventListener("submit", function(even
     .then(data => {
         console.log(data);
         if( data.outcome == 'success' ) {
-            window.open('../customer_page/customer_page.html', '_self');
+            window.open('../doctor_page/doctor_page.html', '_self');
 
     }
     else{
@@ -33,4 +33,4 @@ document.getElementById("registerForm").addEventListener("submit", function(even
 
 
 
-});
+};
